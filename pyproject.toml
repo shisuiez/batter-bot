@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bot_baatyr"
+version = "0.1.0"
+description = "Telegram-бот для организации походов"
+authors = ["Твой Ник <your@email.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+aiogram = "^3.4"
+asyncpg = "^0.29.0"
+SQLAlchemy = "^2.0"
+python-dotenv = "^1.0.1"
+requests = "^2.31.0"
+greenlet = "^3.2.3"
+psycopg2-binary = "^2.9.10"
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.16.4"
+pytest = "^7.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 

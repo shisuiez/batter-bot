@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS admin_logs (
+    id SERIAL PRIMARY KEY,
+    admin_id INTEGER NOT NULL,
+    action VARCHAR(128) NOT NULL,
+    details TEXT NOT NULL,
+    timestamp DATE DEFAULT CURRENT_DATE
+); 
